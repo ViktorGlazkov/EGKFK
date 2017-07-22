@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    tools:context=".activity.MeasurementActivity"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <Button
+        android:id="@+id/button_g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="19dp"
+        android:onClick="listenG"
+        android:text="Г" />
+
+    <Button
+        android:id="@+id/button_nul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:onClick="listenZero"
+        android:text="НУЛЬ"
+        android:layout_below="@+id/textViewE"
+        android:layout_alignLeft="@+id/textViewE"
+        android:layout_alignStart="@+id/textViewE" />
+
+    <TextView
+        android:id="@+id/text_g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click G"
+        android:layout_alignTop="@+id/button_g"
+        android:layout_toRightOf="@+id/button_g"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_alignBottom="@+id/button_g"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/text_p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBottom="@+id/textViewP"
+        android:layout_alignLeft="@+id/text_g"
+        android:layout_alignStart="@+id/text_g"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/text_e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBottom="@+id/textViewE"
+        android:layout_alignLeft="@+id/text_p"
+        android:layout_alignStart="@+id/text_p"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/text_nul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button_nul"
+        android:layout_alignLeft="@+id/text_e"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/text_e"
+        android:layout_alignTop="@+id/button_nul"
+        android:text="Click Zero" />
+
+    <TextView
+        android:id="@+id/textViewP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button_g"
+        android:layout_alignLeft="@+id/button_g"
+        android:layout_alignRight="@+id/button_g"
+        android:layout_alignStart="@+id/button_g"
+        android:layout_below="@+id/button_g"
+        android:layout_marginTop="32dp"
+        android:text="П" />
+
+    <TextView
+        android:id="@+id/textViewE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textViewP"
+        android:layout_alignLeft="@+id/textViewP"
+        android:layout_alignRight="@+id/textViewP"
+        android:layout_alignStart="@+id/textViewP"
+        android:layout_below="@+id/textViewP"
+        android:layout_marginTop="32dp"
+        android:text="E" />
+</RelativeLayout>
